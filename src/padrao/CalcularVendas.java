@@ -14,7 +14,7 @@ public class CalcularVendas {
 			produtoNumber = input.nextInt();
 			if(produtoNumber == -1)
 				break;
-			System.out.println("Quantidade vendida: ");
+			System.out.print("Quantidade vendida: ");
 			int qtdVendida = input.nextInt();
 			switch (produtoNumber) {
 
@@ -44,7 +44,7 @@ public class CalcularVendas {
 			}
 		} while (produtoNumber != -1);
 
-		System.out.printf("Valor total de produtos vendidos é: %f", total);
+		System.out.printf("Valor total de produtos vendidos é: %.2f", total);
 
 		input.close();
 	}
